@@ -1,0 +1,130 @@
+/* ===== Reset & General ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* ===== Header ===== */
+.header {
+    display: flex; /* Flexbox */
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #1e293b;
+    color: #fff;
+}
+
+.navbar a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Hover */
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* ===== Sections ===== */
+.section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* ===== About ===== */
+.about-content {
+    display: flex; /* Flexbox */
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content img {
+    width: 140px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Shadow */
+}
+
+/* ===== Skills ===== */
+.skills-container {
+    display: flex; /* Flexbox */
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    padding: 12px 18px;
+    background-color: #e2e8f0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15); /* Shadow */
+}
+
+/* ===== Projects ===== */
+.project-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 4px solid #1e293b;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* ===== Contact ===== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+}
+
+.contact-form button {
+    width: 140px;
+    padding: 10px;
+    background-color: #1e293b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hover */
+}
+
+.contact-form button:hover {
+    background-color: #0f172a;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #1e293b;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .social a {
+    color: #38bdf8;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .header,
+    .about-content {
+        flex-direction: column; /* Media Query */
+        text-align: center;
+        gap: 15px;
+    }
+}
